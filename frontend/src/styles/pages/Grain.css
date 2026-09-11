@@ -1,0 +1,67 @@
+.grain {
+  width: 100%;
+  background: var(--mint-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1540px;
+  padding: 70px 0;
+}
+
+.grain-title {
+  width: 100%;
+  text-align: left;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 58px;
+  color: var(--coal);
+  padding-left: 150px; 
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.grain-card-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 100px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .grain-title {
+    padding-right: 29%;
+    font-size: 43px;
+  }
+  .grain-card-container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .grain-title {
+    padding-right: 18%;
+    font-size: 40px;
+  }
+  .grain-card-container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grain-title {
+    padding-right: 8%;
+    font-size: 35px;
+  }
+  .grain-card-container {
+    max-width: 300px;
+  }
+}

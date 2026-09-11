@@ -1,0 +1,45 @@
+.rice-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  min-height: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--white);
+  box-shadow: 0 4px 40px var(--coal);
+}
+
+.rice-type {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--coal);
+  text-align: center;
+}
+
+.rice-percentage {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--black);
+  margin: 10px 10px;
+  text-align: center;
+  word-break: break-word; 
+  max-width: 100%; 
+  overflow-wrap: break-word;
+}
+
+.more-info-btn {
+  background-color: var(--super-blue);
+  color: var(--white);
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: background 0.3s ease;
+}
+
+.more-info-btn:hover {
+  background-color: var(--crimson-blue);
+}

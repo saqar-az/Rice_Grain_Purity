@@ -1,0 +1,140 @@
+  .ent-container {
+    width: 100%;
+    background: var(--mint-cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ab-content {
+    width: 100%;
+    max-width: 1540px;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px 10px 0px;
+
+  }
+  
+  .detailed-about {
+    width: 75%;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 180%;
+    text-align: center;
+    color: var(--black);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+  
+  .detailed-about p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .detailed-about p + p {
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .joinbutton {
+    position: relative;
+    width: 170px;
+    height: 58px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 40px 0px 5px 0px;
+  }
+
+  .joinbg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #587EBB;
+    border-radius: 10px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .jointext {
+    position: absolute;
+    left: 10%;
+    right: 9.41%;
+    top: 27.59%;
+    bottom: 27.59%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .joinbutton:hover .joinbg {
+    background: #3B4A8C; 
+    box-shadow: 0px 0px 15px 3px rgba(197, 18, 11, 0.6);
+  }
+
+  @media screen and (min-width: 901px) and (max-width: 1200px) {
+
+    .detailed-about{
+      font-weight: 250;
+      font-size: 22px;
+      padding: 5px;
+      left: 7%;
+      width: 800px;
+      height: 720px;
+    }
+
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .detailed-about{
+      font-weight: 200;
+      font-size: 20px;
+      padding: 5px;
+      left: 7%;
+      width: 480px;
+      height: 800px;
+    }
+    .joinbutton {
+      width: 140px;
+      height: 50px;
+    }
+    .jointext {
+      font-size: 18px;
+    }
+
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .detailed-about{
+      font-weight: 100;
+      font-size: 15px;
+      padding: 5px;
+      left: 2%;
+      width: 360px;
+      height: 585px;
+    }
+
+    .joinbutton {
+      width: 120px;
+      height: 44px;
+      left: 0; 
+      top: 10px;
+    }
+    .jointext {
+      font-size: 16px;
+    }
+  }

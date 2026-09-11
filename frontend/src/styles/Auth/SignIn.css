@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--black);
+}
+
+.user-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--black);
+}
+
+.user-login-box {
+  width: 100%;
+  max-width: 533px;
+  background: var(--coal);
+  border: 1px solid var(--mint-cream);
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 60px;
+}
+
+.fi-username-label,
+.fi-password-label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: left;
+  color: var(--mint-cream);
+}
+
+.fi-username-input-box,
+.fi-password-input-box {
+  box-sizing: border-box;
+  border: 1px solid var(--mint-cream);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.fi-username-input-box input,
+.fi-password-input-box input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--mint-cream);
+  font-weight: 700;
+  font-size: 20px;
+  outline: none;
+  text-align: center;
+}
+
+.password-toggle-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.password-toggle-icon img {
+  width: 24px;  
+  height: 24px; 
+  object-fit: contain; 
+}
+
+.forgot-password {
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--mint-cream);
+  cursor: pointer;
+  margin: 10px 0 20px;
+  transition: all 0.3s ease;
+
+}
+
+.sign-in-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--super-blue);
+  border-radius: 10px;
+  width: 216px;
+  height: 41px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+
+}
+
+.sign-in-button:hover {
+  background-color: #3B4A8C;
+  border: 1px solid #9747FF;
+  box-shadow: 0px 0px 15px 3px rgba(197, 18, 11, 0.6);
+}
+
+.sign-in-button-text {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--mint-cream);
+}
+
+.no-account {
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--white);
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+
+}
+
+.error-message {
+  min-height: 30px; 
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--super-blue);
+  margin: 10px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.error-message.visible {
+  opacity: 1;
+}
+
+.fi-username-input-box.input-error,
+.fi-password-input-box.input-error {
+  border: 1px solid var(--super-blue);
+}
+.no-account:hover {
+  color: var(--super-blue);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .user-login-box {
+    padding: 20px 10px;
+    margin-top: 60px;
+  }
+  .username-label,
+  .password-label {
+    font-size: 16px;
+  }
+  .username-input-box,
+  .password-input-box {
+    height: 40px;
+  }
+  .username-input-box input,
+  .password-input-box input {
+    font-size: 16px;
+  }
+  .sign-in-button {
+    width: 180px;
+    height: 35px;
+  }
+  .sign-in-button-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 601px) {
+  .user-login-box {
+    padding: 25px 15px;
+    margin-top: 60px;
+  }
+  .username-label,
+  .password-label {
+    font-size: 18px;
+  }
+  .username-input-box,
+  .password-input-box {
+    height: 42px;
+  }
+  .username-input-box input,
+  .password-input-box input {
+    font-size: 18px;
+  }
+  .sign-in-button {
+    width: 200px;
+    height: 38px;
+  }
+  .sign-in-button-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 901px) {
+  .user-login-box {
+    padding: 30px 20px;
+    margin-top: 60px;
+  }
+  .username-label,
+  .password-label {
+    font-size: 20px;
+  }
+  .username-input-box,
+  .password-input-box {
+    height: 45px;
+  }
+  .username-input-box input,
+  .password-input-box input {
+    font-size: 20px;
+  }
+  .sign-in-button {
+    width: 216px;
+    height: 41px;
+  }
+  .sign-in-button-text {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,40 @@
+#root {
+  max-width: 1540px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  word-spacing: -1px;
+  --black: #000000;
+  --coal: #282828;
+  --mint-cream: #FFF7ED;
+  --super-blue: #587EBB;
+  --midtone-gray: #7F7F7F;
+  --white:#fff;
+  --green:#018625;
+  --crimson-blue:#3B4A8C;
+}
+
+
+ /* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
+
+/* .card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */

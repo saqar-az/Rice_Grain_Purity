@@ -1,0 +1,21 @@
+.at {
+    width: 100%;
+    background: var(--mint-cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .at-container {
+    width: 100%;
+    max-width: 1550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 100px;
+  } 
+  .at-navbar-container {
+    z-index: 1000;
+  }
+   
